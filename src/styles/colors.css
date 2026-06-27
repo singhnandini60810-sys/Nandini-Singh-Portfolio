@@ -1,0 +1,19 @@
+:root {
+
+  --bg: #F8FBFF;
+  --surface: #FFFFFF;
+
+  --primary: #1E4D8C;
+  --secondary: #5FA8F5;
+
+  --accent: #D65050;
+
+  --gold: #D9B96A;
+
+  --text: #233044;
+
+  --text-light: #667085;
+
+  --shadow: rgba(20,40,80,.12);
+
+}

@@ -1,0 +1,54 @@
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:25px;
+}
+
+.project-card{
+background:#fff;
+border-radius:18px;
+padding:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+}
+
+.project-card h3{
+margin:0 0 18px;
+color:#204b83;
+font-size:1.3rem;
+}
+
+.project-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.project-buttons button{
+padding:12px 24px;
+border:none;
+border-radius:12px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.github-btn{
+background:#204b83;
+color:white;
+}
+
+.demo-btn{
+background:#ef4444;
+color:white;
+}
+
+.project-buttons button:hover{
+transform:scale(1.05);
+}
