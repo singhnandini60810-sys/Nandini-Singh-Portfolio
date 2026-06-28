@@ -8,9 +8,9 @@ const projects = [
     live: "https://singhnandini60810-sys.github.io/ATS-Calculator/",
   },
   {
-    title: "Dijikstra-Pathfnding-Visualizer",
-    github: "https://github.com/singhnandini60810-sys/dijkstra-pathfinding-visualizer",
-    
+    title: "Nandini-Singh-Portfolio",
+    github: "https://github.com/singhnandini60810-sys/Nandini-Singh-Portfolio",
+    live: "https://nandini-singh-portfolio-ictw.vercel.app/professional",
   },
   {
     title: "GitHub Repo Finder",
