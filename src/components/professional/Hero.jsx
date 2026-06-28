@@ -102,7 +102,10 @@ function Hero() {
           </h2>
 
           <p className="about">
-            Computer Science undergraduate with a strong interest in Full Stack Development, Data Analytics and UI/UX Design. Passionate about building scalable web applications, solving real-world problems and continuously learning modern technologies to create impactful digital experiences.
+            Passionate Full Stack Developer focused on building
+            modern, responsive and user-friendly web applications.
+            I enjoy transforming ideas into meaningful digital
+            experiences through clean code and thoughtful design.
           </p>
 
           {/* CTA Buttons */}
@@ -110,10 +113,10 @@ function Hero() {
           <div className="hero-buttons">
 
             <a
-              href="#Resume"
+              href="#CV"
               className="hero-btn primary-btn"
             >
-              View Resume
+              View CV
             </a>
 
             <a
