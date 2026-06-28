@@ -1,35 +1,64 @@
 import SectionCard from "../../common/SectionCard";
-import "./Sections.css";
 
 function Resume() {
   return (
-    <SectionCard title="Resume">
+    <SectionCard title="CV">
 
-      <div className="resume-box">
+      <div className="resume-grid">
 
-        <a
-          href="/pdfs/technical-resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Technical Resume
-        </a>
+        <div className="resume-card">
 
-        <a
-          href="/pdfs/general-cv.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          General CV
-        </a>
+          <h3> Technical CV</h3>
 
-        <a
-          href="/pdfs/non-tech-cv.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Non-Technical CV
-        </a>
+          <p>
+            Full Stack Development, Web Technologies, Projects,
+            Technical Skills and Engineering Roles.
+          </p>
+
+          <button
+            className="resume-btn"
+            onClick={() => window.open("/pdfs/technical-resume.pdf", "_blank")}
+          >
+            View CV
+          </button>
+
+        </div>
+
+        <div className="resume-card">
+
+          <h3> Non-Technical CV</h3>
+
+          <p>
+            Leadership, Communication, Teamwork,
+            Extracurricular Activities and Soft Skills.
+          </p>
+
+          <button
+            className="resume-btn"
+            onClick={() => window.open("/pdfs/non-tech-resume.pdf", "_blank")}
+          >
+            View CV
+          </button>
+
+        </div>
+
+        <div className="resume-card">
+
+          <h3> General CV</h3>
+
+          <p>
+            Complete academic profile, achievements,
+            certifications and professional overview.
+          </p>
+
+          <button
+            className="resume-btn"
+            onClick={() => window.open("/pdfs/general-cv.pdf", "_blank")}
+          >
+            View CV
+          </button>
+
+        </div>
 
       </div>
 

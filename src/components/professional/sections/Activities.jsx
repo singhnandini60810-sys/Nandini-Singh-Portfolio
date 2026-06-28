@@ -1,26 +1,58 @@
 import SectionCard from "../../common/SectionCard";
-import "./Sections.css";
+
+const activities = [
+  {
+    title: "Blood Donation Awareness",
+    description:
+      "Participated in a blood donation awareness campaign and supported community welfare initiatives.",
+    year: "2026",
+    certificate: "/pdfs/Blood Donation.pdf",
+  },
+
+  {
+    title: "NSS Volunteer",
+    description:
+      "Worked as an active volunteer in NSS activities including social awareness and community service.",
+    year: "2026",
+    certificate: "/pdfs/Volunteer.pdf",
+  },
+
+  {
+    title: "Quiz Competition",
+    description:
+      "Participated in an inter-college quiz competition showcasing analytical and technical knowledge.",
+    year: "2025",
+    certificate: "/pdfs/Quiz.pdf",
+  },
+];
 
 function Activities() {
   return (
     <SectionCard title="Extra Curricular Activities">
 
-      <div className="activity-card">
-        <h3>NSS Volunteer</h3>
+      <div className="activities-grid">
 
-        <p>
-          Participated in community service, awareness drives,
-          plantation campaigns and social activities.
-        </p>
-      </div>
+        {activities.map((activity, index) => (
 
-      <div className="activity-card">
-        <h3>College Events</h3>
+          <div className="activity-card" key={index}>
 
-        <p>
-          Volunteered and participated in departmental events,
-          workshops and technical activities.
-        </p>
+            <h3>{activity.title}</h3>
+
+            <p>{activity.description}</p>
+
+            <span>Year : {activity.year}</span>
+
+            <button
+              className="view-btn"
+              onClick={() => window.open(activity.certificate, "_blank")}
+            >
+              View Certificate
+            </button>
+
+          </div>
+
+        ))}
+
       </div>
 
     </SectionCard>

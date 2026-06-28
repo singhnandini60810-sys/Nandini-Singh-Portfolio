@@ -5,25 +5,37 @@ function Certifications() {
   return (
     <SectionCard title="Certifications">
 
-      {certificates.map((cert) => (
+      <div className="certificate-grid">
 
-        <div key={cert.id} className="certificate-card">
+        {certificates.map((cert) => (
 
-          <h3>{cert.title}</h3>
-
-          <p>{cert.issuer}</p>
-
-          <p>{cert.year}</p>
-
-          <button
-            onClick={() => window.open(cert.file, "_blank")}
+          <div
+            className="certificate-card"
+            key={cert.id}
           >
-            View Certificate
-          </button>
 
-        </div>
+            <h3>{cert.title}</h3>
 
-      ))}
+            <p>
+              <strong>Issued By:</strong> {cert.issuer}
+            </p>
+
+            <p>
+              <strong>Year:</strong> {cert.year}
+            </p>
+
+            <button
+              className="view-btn"
+              onClick={() => window.open(cert.file, "_blank")}
+            >
+              View Certificate
+            </button>
+
+          </div>
+
+        ))}
+
+      </div>
 
     </SectionCard>
   );

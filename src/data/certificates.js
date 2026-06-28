@@ -2,17 +2,19 @@ const certificates = [
   {
     id: 1,
     title: "Java Programming",
-    issuer: "UPTEC",
+    issuer: "UPTEC Computer Consultancy Ltd.",
     year: "2023",
-    file: "/pdfs/Java.pdf",
+    file: "/pdfs/certificates/Java.pdf",
   },
+
   {
     id: 2,
     title: "C Programming",
-    issuer: "SOFTECH",
+    issuer: "SOFTECH Computer Education",
     year: "2023",
-    file: "/pdfs/C.pdf",
+    file: "/pdfs/certificates/C.pdf",
   },
+
 ];
 
 export default certificates;
