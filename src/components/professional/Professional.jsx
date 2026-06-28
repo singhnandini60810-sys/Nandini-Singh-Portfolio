@@ -1,9 +1,6 @@
 import "./Professional.css";
-
-import BackgroundParticles from "./BackgroundParticles";
 import Hero from "./Hero";
 import Navigation from "./Navigation";
-
 import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
@@ -24,7 +21,7 @@ function Professional() {
     <div className="professional-page">
 
       {/* Background */}
-      <BackgroundParticles />
+     
       <div className="background-blob"></div>
 
       {/* Hero */}
