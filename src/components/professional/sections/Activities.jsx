@@ -28,7 +28,9 @@ const activities = [
 
 function Activities() {
   return (
-    <SectionCard title="Extra Curricular Activities">
+    <section id="Activities">
+
+<SectionCard title="Extra Curricular Activities">
 
       <div className="activities-grid">
 
@@ -55,7 +57,9 @@ function Activities() {
 
       </div>
 
-    </SectionCard>
+   </SectionCard>
+
+</section>
   );
 }
 

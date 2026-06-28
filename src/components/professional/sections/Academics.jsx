@@ -3,7 +3,9 @@ import "./Sections.css";
 
 function Academics() {
   return (
-    <SectionCard title="Academics">
+    <section id="Academics">
+
+<SectionCard title="Academics">
 
       <div className="academic-card">
         <h3>B.Tech (Computer Science)</h3>
@@ -27,6 +29,7 @@ function Academics() {
       </div>
 
     </SectionCard>
+    </section>
   );
 }
 

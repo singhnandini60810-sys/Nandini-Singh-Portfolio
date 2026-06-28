@@ -1,0 +1,306 @@
+/* ===========================================
+   PROFESSIONAL PAGE
+=========================================== */
+
+.professional-page{
+
+position:relative;
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+background-image:url("../../assets/images/professional-bg.png");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+
+}
+
+/* White Glass Overlay */
+
+.professional-page::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(248,251,255,.90),
+
+rgba(244,248,255,.84)
+
+);
+
+backdrop-filter:blur(2px);
+
+-webkit-backdrop-filter:blur(2px);
+
+z-index:-2;
+
+}
+
+/* ===========================================
+   PARTICLES
+=========================================== */
+
+#particles{
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -1;
+
+    pointer-events: none;
+
+}
+
+/* ===========================================
+   MAIN CONTENT
+=========================================== */
+
+.professional-main{
+
+    width: min(1300px,92%);
+
+    margin: auto;
+
+    padding-bottom: 70px;
+
+}
+
+/* ===========================================
+   SECTION SPACING
+=========================================== */
+
+section{
+
+    scroll-margin-top: 110px;
+
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+button{
+
+    transition: .35s ease;
+
+}
+
+button:hover{
+
+    transform: translateY(-4px);
+
+}
+
+/* ===========================================
+   LINKS
+=========================================== */
+
+a{
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+/* ===========================================
+   SMOOTH SCROLL
+=========================================== */
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+/* ===========================================
+   CUSTOM SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar{
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background: #edf5ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background: linear-gradient(
+        180deg,
+        #1E4D8C,
+        #56A5FF
+    );
+
+    border-radius: 30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background: #2f67c7;
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+.professional-main{
+
+    width:95%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.professional-page{
+
+    background-attachment: scroll;
+
+}
+
+section{
+
+    scroll-margin-top:150px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.professional-main{
+
+    width:96%;
+
+}
+
+}
+/* ===========================================
+   FLOATING BLOBS
+=========================================== */
+
+.professional-page::after{
+
+content:"";
+
+position:fixed;
+
+width:420px;
+
+height:420px;
+
+top:80px;
+
+right:-120px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,#4B9BFF 0%,transparent 72%);
+
+opacity:.12;
+
+animation:blobMove 14s ease-in-out infinite;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+.background-blob{
+
+position:fixed;
+
+width:300px;
+
+height:300px;
+
+bottom:40px;
+
+left:-100px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,#9FD0FF 0%,transparent 72%);
+
+opacity:.12;
+
+animation:blobMove2 18s ease-in-out infinite;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+@keyframes blobMove{
+
+0%{
+
+transform:translateY(0) scale(1);
+
+}
+
+50%{
+
+transform:translateY(-45px) scale(1.08);
+
+}
+
+100%{
+
+transform:translateY(0) scale(1);
+
+}
+
+}
+
+@keyframes blobMove2{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+50%{
+
+transform:translate(35px,-35px);
+
+}
+
+100%{
+
+transform:translate(0,0);
+
+}
+
+}

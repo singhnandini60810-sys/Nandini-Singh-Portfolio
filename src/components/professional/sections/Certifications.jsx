@@ -3,7 +3,9 @@ import certificates from "../../../data/certificates";
 
 function Certifications() {
   return (
-    <SectionCard title="Certifications">
+    <section id="Certifications">
+
+<SectionCard title="Certifications">
 
       <div className="certificate-grid">
 
@@ -38,6 +40,8 @@ function Certifications() {
       </div>
 
     </SectionCard>
+
+</section>
   );
 }
 

@@ -23,7 +23,9 @@ const workData = [
 
 function Work() {
   return (
-    <SectionCard title="Work Experience">
+    <section id="Work">
+
+<SectionCard title="Work">
 
       {workData.map((work) => (
 
@@ -46,7 +48,9 @@ function Work() {
 
       ))}
 
-    </SectionCard>
+   </SectionCard>
+
+</section>
   );
 }
 

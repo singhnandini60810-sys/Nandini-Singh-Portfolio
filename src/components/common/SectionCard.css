@@ -1,71 +1,144 @@
 .section-card{
 
-width:min(1000px,90%);
+    width:min(1050px,92%);
 
-margin:25px auto;
+    margin:28px auto;
 
-border-radius:24px;
+    border-radius:24px;
 
-overflow:hidden;
+    overflow:hidden;
 
-background:white;
+    background:rgba(255,255,255,.95);
 
-box-shadow:0 15px 35px rgba(0,0,0,.08);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(86,165,255,.12);
+
+    box-shadow:0 18px 45px rgba(30,77,140,.08);
+
+    transition:.35s ease;
+
+}
+
+.section-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 60px rgba(30,77,140,.15);
 
 }
 
 .section-header{
 
-width:100%;
+    width:100%;
 
-padding:24px 32px;
+    padding:26px 34px;
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-align-items:center;
+    align-items:center;
 
-border:none;
+    border:none;
 
-cursor:pointer;
+    cursor:pointer;
 
-background:white;
+    background:linear-gradient(135deg,#ffffff,#f6faff);
 
-font-size:1.25rem;
+    font-size:1.35rem;
 
-font-weight:600;
+    font-weight:700;
 
-font-family:"Poppins",sans-serif;
+    font-family:"Poppins",sans-serif;
 
-transition:.35s;
+    color:#1E4D8C;
+
+    transition:.35s;
 
 }
 
 .section-header:hover{
 
-background:#eef6ff;
+    background:#eef6ff;
 
 }
 
 .section-header.active{
 
-background:#dfeeff;
+    background:#e6f1ff;
 
-color:#23539f;
+}
+
+.section-header span{
+
+    position:relative;
+
+}
+
+.section-header span::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:60px;
+
+    height:4px;
+
+    border-radius:50px;
+
+    background:linear-gradient(90deg,#1E4D8C,#56A5FF);
 
 }
 
 .section-content{
 
-padding:30px;
+    padding:32px;
 
-font-family:"Poppins",sans-serif;
+    background:white;
 
-line-height:1.8;
+    font-family:"Poppins",sans-serif;
 
-color:#5d6777;
+    line-height:1.9;
 
-background:white;
+    color:#58677a;
+
+    font-size:1rem;
+
+}
+
+@media(max-width:768px){
+
+.section-card{
+
+width:94%;
+
+margin:20px auto;
+
+}
+
+.section-header{
+
+padding:20px 22px;
+
+font-size:1.1rem;
+
+}
+
+.section-content{
+
+padding:22px;
+
+}
+
+}
+.section-card{
+
+will-change:transform,opacity;
 
 }

@@ -2,6 +2,8 @@ import SectionCard from "../../common/SectionCard";
 
 function About() {
   return (
+    <section id="About">
+
     <SectionCard title="About Me">
 
 <h2>Professional Profile</h2>
@@ -27,6 +29,8 @@ function About() {
       </p>
 
     </SectionCard>
+
+    </section>
   );
 }
 

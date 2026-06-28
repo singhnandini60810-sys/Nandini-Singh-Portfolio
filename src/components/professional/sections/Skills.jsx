@@ -17,7 +17,9 @@ const skills = [
 
 function About() {
   return (
-    <SectionCard title="Skills">
+    <section id="Skills">
+
+<SectionCard title="Skills">
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div className="skill" key={index}>
@@ -35,7 +37,10 @@ function About() {
           </div>
         ))}
       </div>
+    
     </SectionCard>
+
+</section>
   );
 }
 

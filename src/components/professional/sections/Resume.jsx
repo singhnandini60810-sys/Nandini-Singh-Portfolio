@@ -2,8 +2,9 @@ import SectionCard from "../../common/SectionCard";
 
 function Resume() {
   return (
-    <SectionCard title="CV">
+    <section id="CV">
 
+<SectionCard title="CV">
       <div className="resume-grid">
 
         <div className="resume-card">
@@ -63,6 +64,7 @@ function Resume() {
       </div>
 
     </SectionCard>
+    </section>
   );
 }
 

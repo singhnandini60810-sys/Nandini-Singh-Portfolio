@@ -26,7 +26,9 @@ const projects = [
 
 function Projects() {
   return (
-    <SectionCard title="Projects">
+    <section id="Projects">
+
+<SectionCard title="Projects">
 
       <div className="projects-grid">
 
@@ -65,6 +67,8 @@ function Projects() {
       </div>
 
     </SectionCard>
+
+</section>
   );
 }
 

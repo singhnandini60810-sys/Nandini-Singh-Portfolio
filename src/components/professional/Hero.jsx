@@ -39,6 +39,8 @@ function Hero() {
 
       <div className="hero-content">
 
+        {/* Avatar */}
+
         <motion.div
           className="hero-left"
           initial={{
@@ -53,12 +55,23 @@ function Hero() {
             duration: 1,
           }}
         >
-          <img
+
+          <motion.img
             src={avatar}
             alt="Professional Avatar"
             className="hero-avatar"
+            animate={{
+              y: [0, -12, 0],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+            }}
           />
+
         </motion.div>
+
+        {/* Text */}
 
         <motion.div
           className="hero-right"
@@ -85,36 +98,66 @@ function Hero() {
           </h1>
 
           <h2>
-            Full Stack Developer
+           Aspiring Full Stack Developer | Data Analytics Enthusiast
           </h2>
 
           <p className="about">
-            Passionate developer focused on creating
-            scalable web applications, modern user
-            interfaces and meaningful digital
-            experiences with clean design and
-            efficient code.
+            Computer Science undergraduate with a strong interest in Full Stack Development, Data Analytics and UI/UX Design. Passionate about building scalable web applications, solving real-world problems and continuously learning modern technologies to create impactful digital experiences.
           </p>
+
+          {/* CTA Buttons */}
+
+          <div className="hero-buttons">
+
+            <a
+              href="#Resume"
+              className="hero-btn primary-btn"
+            >
+              View Resume
+            </a>
+
+            <a
+              href="#Contact"
+              className="hero-btn secondary-btn"
+            >
+              Contact Me
+            </a>
+
+          </div>
+
+          {/* Social Icons */}
 
           <div className="socials">
 
-            <a href="https://github.com/singhnandini60810-sys">
+            <a
+              href="https://github.com/singhnandini60810-sys"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub />
             </a>
 
-            <a href="https://www.linkedin.com/in/nandiniisingh1008/">
+            <a
+              href="https://www.linkedin.com/in/nandiniisingh1008/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin />
             </a>
 
-            <a href="https://leetcode.com/u/9OzP5CylMS/">
+            <a
+              href="https://leetcode.com/u/9OzP5CylMS/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <SiLeetcode />
             </a>
 
-            <a href="singhnandini60810@gmail.com">
+            <a href="mailto:singhnandini60810@gmail.com">
               <FaEnvelope />
             </a>
 
-            <a href="tel:7267906352">
+            <a href="tel:+917267906352">
               <FaPhoneAlt />
             </a>
 

@@ -1,4 +1,9 @@
+import "./Professional.css";
+
+import BackgroundParticles from "./BackgroundParticles";
 import Hero from "./Hero";
+import Navigation from "./Navigation";
+
 import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
@@ -7,37 +12,58 @@ import Resume from "./sections/Resume";
 import Academics from "./sections/Academics";
 import Certifications from "./sections/Certifications";
 import Activities from "./sections/Activities";
+import Contact from "./sections/Contact";
 import ThankYou from "./sections/ThankYou";
+
+import BackToTop from "../common/BackToTop";
 
 function Professional() {
 
-return(
+  return (
 
-<>
+    <div className="professional-page">
 
-<Hero/>
+      {/* Background */}
+      <BackgroundParticles />
+      <div className="background-blob"></div>
 
-<About/>
+      {/* Hero */}
+      <Hero />
 
-<Skills/>
+      {/* Navigation */}
+      <Navigation />
 
-<Projects/>
+      {/* Main Content */}
+      <main className="professional-main">
 
-<Work />
+        <About />
 
-<Resume />
+        <Skills />
 
-<Academics />
+        <Projects />
 
-<Certifications />
+        <Work />
 
-<Activities />
+        <Resume />
 
-<ThankYou />
+        <Academics />
 
-</>
+        <Certifications />
 
-);
+        <Activities />
+
+        <Contact />
+
+        <ThankYou />
+
+      </main>
+
+      {/* Back To Top */}
+      <BackToTop />
+
+    </div>
+
+  );
 
 }
 
