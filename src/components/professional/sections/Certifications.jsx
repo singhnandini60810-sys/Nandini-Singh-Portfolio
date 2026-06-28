@@ -1,33 +1,29 @@
 import SectionCard from "../../common/SectionCard";
-import "./Sections.css";
+import certificates from "../../../data/certificates";
 
 function Certifications() {
   return (
     <SectionCard title="Certifications">
 
-      <div className="certificate-card">
-        <h3>AWS</h3>
+      {certificates.map((cert) => (
 
-        <button className="view-btn">
-          View Certificate
-        </button>
-      </div>
+        <div key={cert.id} className="certificate-card">
 
-      <div className="certificate-card">
-        <h3>JavaScript</h3>
+          <h3>{cert.title}</h3>
 
-        <button className="view-btn">
-          View Certificate
-        </button>
-      </div>
+          <p>{cert.issuer}</p>
 
-      <div className="certificate-card">
-        <h3>HTML & CSS</h3>
+          <p>{cert.year}</p>
 
-        <button className="view-btn">
-          View Certificate
-        </button>
-      </div>
+          <button
+            onClick={() => window.open(cert.file, "_blank")}
+          >
+            View Certificate
+          </button>
+
+        </div>
+
+      ))}
 
     </SectionCard>
   );
