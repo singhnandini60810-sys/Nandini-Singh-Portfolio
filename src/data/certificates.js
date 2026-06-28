@@ -2,15 +2,15 @@ const certificates = [
   {
     id: 1,
     title: "Java Programming",
-    issuer: "Oracle",
-    year: "2026",
+    issuer: "UPTEC",
+    year: "2023",
     file: "/pdfs/Java.pdf",
   },
   {
     id: 2,
     title: "C Programming",
-    issuer: "NPTEL",
-    year: "2025",
+    issuer: "SOFTECH",
+    year: "2023",
     file: "/pdfs/C.pdf",
   },
 ];
