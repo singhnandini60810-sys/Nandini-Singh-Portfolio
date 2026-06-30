@@ -11,7 +11,7 @@ function Academics() {
         <h3>B.Tech (Computer Science)</h3>
         <p>2023 – Present</p>
         <p>Babu Banarasi Das University</p>
-        <p>CGPA : 8.2(till 5th sem)</p>
+        <p>CGPA : 8.2(till 6th sem)</p>
       </div>
 
       <div className="academic-card">
