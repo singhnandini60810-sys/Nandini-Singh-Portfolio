@@ -4,33 +4,29 @@ const gallery = [
 
   {
     image: "https://picsum.photos/500/500?1",
-    title: "Beautiful Moments",
+    
   },
 
   {
     image: "https://picsum.photos/500/500?2",
-    title: "Travelling",
+  
   },
 
   {
     image: "https://picsum.photos/500/500?3",
-    title: "Photography",
+  
   },
 
   {
     image: "https://picsum.photos/500/500?4",
-    title: "Memories",
+   
   },
 
   {
     image: "https://picsum.photos/500/500?5",
-    title: "Nature",
+  
   },
 
-  {
-    image: "https://picsum.photos/500/500?6",
-    title: "Life",
-  },
 
 ];
 
