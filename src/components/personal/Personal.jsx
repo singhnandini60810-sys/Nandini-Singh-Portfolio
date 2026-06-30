@@ -12,7 +12,6 @@ import Favorites from "./sections/Favorites";
 
 import Creative from "./sections/Creative";
 
-import Gallery from "./sections/Gallery";
 
 import BucketList from "./sections/BucketList";
 
@@ -44,7 +43,6 @@ function Personal() {
 
       <Creative />
 
-      <Gallery />
 
       <BucketList />
 
