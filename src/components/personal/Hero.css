@@ -1,0 +1,46 @@
+.personal-hero{
+
+min-height:75vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:60px 20px;
+
+background:linear-gradient(
+135deg,
+#ffe8f3,
+#fff5fb,
+#fefeff
+);
+
+}
+
+.personal-hero h1{
+
+font-size:3rem;
+
+color:#d63384;
+
+margin-bottom:20px;
+
+}
+
+.personal-hero p{
+
+max-width:700px;
+
+font-size:1.15rem;
+
+color:#666;
+
+line-height:1.8;
+
+}

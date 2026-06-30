@@ -1,23 +1,62 @@
-import { motion } from "framer-motion";
+import Navigation from "./Navigation";
+
+import Hero from "./Hero";
+
+import Story from "./sections/Story";
+
+import Timeline from "./sections/Timeline";
+
+import Interests from "./sections/Interests";
+
+import Favorites from "./sections/Favorites";
+
+import Creative from "./sections/Creative";
+
+import Gallery from "./sections/Gallery";
+
+import BucketList from "./sections/BucketList";
+
+import FunFacts from "./sections/FunFacts";
+
+import Quote from "./sections/Quote";
+
+import Contact from "./sections/Contact";
+
+import ThankYou from "./sections/ThankYou";
+
+import "./Personal.css";
 
 function Personal() {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -80 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 80 }}
-      transition={{ duration: 0.6 }}
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        fontSize: "3rem",
-        fontWeight: "700",
-      }}
-    >
-      Personal Page
-    </motion.div>
+    <div className="personal-page">
+
+      <Navigation />
+
+      <Hero />
+
+      <Story />
+
+      <Timeline />
+
+      <Interests />
+
+      <Favorites />
+
+      <Creative />
+
+      <Gallery />
+
+      <BucketList />
+
+      <FunFacts />
+
+      <Quote />
+
+      <Contact />
+
+      <ThankYou />
+
+    </div>
   );
 }
 

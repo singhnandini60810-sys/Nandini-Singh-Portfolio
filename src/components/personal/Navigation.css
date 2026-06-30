@@ -1,0 +1,45 @@
+.personal-nav{
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+padding:18px;
+
+background:rgba(255,255,255,.85);
+
+backdrop-filter:blur(15px);
+
+border-bottom:1px solid rgba(0,0,0,.08);
+
+flex-wrap:wrap;
+
+}
+
+.personal-nav a{
+
+text-decoration:none;
+
+color:#d63384;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.personal-nav a:hover{
+
+color:#7b2cbf;
+
+transform:translateY(-2px);
+
+}
