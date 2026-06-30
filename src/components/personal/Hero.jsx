@@ -84,61 +84,6 @@ function Hero() {
         />
 
       </motion.div>
-
-      {/* Floating Decorations */}
-
-      <motion.div
-        className="bubble bubble1"
-        animate={{
-          y: [0, -30, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-        }}
-      >
-        🌸
-      </motion.div>
-
-      <motion.div
-        className="bubble bubble2"
-        animate={{
-          y: [0, -35, 0],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-        }}
-      >
-        ✨
-      </motion.div>
-
-      <motion.div
-        className="bubble bubble3"
-        animate={{
-          y: [0, -25, 0],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-        }}
-      >
-        ☁️
-      </motion.div>
-
-      <motion.div
-        className="bubble bubble4"
-        animate={{
-          y: [0, -28, 0],
-        }}
-        transition={{
-          duration: 6.5,
-          repeat: Infinity,
-        }}
-      >
-        💜
-      </motion.div>
-
     </section>
   );
 }
