@@ -14,6 +14,20 @@ const certificates = [
     year: "2023",
     file: "/pdfs/certificates/C.pdf",
   },
+{
+    id: 3,
+    title: "Introduction to IAM",
+    issuer: "AWS Training and Certification",
+    year: "2026",
+    file: "/pdfs/certificates/IAM.pdf",
+  },
+  {
+    id: 4,
+    title: "Basics of IAM",
+    issuer: "AWS Training and Certification",
+    year: "2026",
+    file: "/pdfs/certificates/IAM2.pdf",
+  }
 
 ];
 
